@@ -23,7 +23,23 @@
 private class CalculatorTest {
 
     @isTest
-    static void myUnitTest() {
-        // TO DO: implement unit test
+    static void myUnitTest1() {
+        Calculator.add(Calculator.multiply(2, 3), 1);
+    }
+
+    @isTest
+    static void myUnitTest2() {
+        Calculator.add(Calculator.multiply(2, 3), 3);
+    }
+
+    @isTest
+    static void myUnitTest3() {
+        productVal = Calculator.multiply(3, Calculator.add(4, 2));
+        sumVal = Calculator.add(productVal, -8);
+        Calculator.divide(Calculator.add(sumVal, 10), 2);
+    }
+
+    @isTest
+    static void myUnitTest4() {
     }
 }
