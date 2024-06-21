@@ -1,4 +1,5 @@
 /**
+ * INTRODUCTION TO APEX CODING CHALLENGE
  * This class contains unit tests for validating the behavior of Apex classes
  * and triggers.
  *
@@ -21,6 +22,7 @@
  */
 @isTest
 private class CalculatorTest {
+    //Create a method called Calculate that takes in a String in proper mathematical format (eg. 1 + 1) and returns the result.
 
     @isTest
     static void myUnitTest1() {
