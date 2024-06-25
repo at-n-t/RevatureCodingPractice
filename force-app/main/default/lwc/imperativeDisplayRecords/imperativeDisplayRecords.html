@@ -1,0 +1,11 @@
+<template>
+    <lightning-input class="input" label="Account Search"></lightning-input>
+    <lightning-button onclick={handleSearch} class="btn" label="Search"></lightning-button>
+
+    <h2>Imperative Search for Account Records</h2>
+    <template lwc:if={accountResult}>
+        <template for:each={accountResult} for:item="acc">
+            <p class="p" key={acc.id}>Account Name: {acc.Name}</p>
+        </template>
+    </template>
+</template>
