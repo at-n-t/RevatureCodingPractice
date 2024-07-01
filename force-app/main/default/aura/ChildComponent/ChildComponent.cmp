@@ -1,3 +1,9 @@
 <aura:component>
-
+    <aura:registerEvent name="compEvent" type="c:compEvent"/>
+    <div class="child">
+        <h2>Child Component Function</h2>
+        <lightning:input type="text" name="Input Text" aura:id="m" label="Input Text to Pass to Parent Component"/>
+        <lightning:button variant="brand" label="Pass Text" title="Pass Text"
+        onclick="{!c.handleClick}"/>
+    </div>
 </aura:component>	

@@ -1,3 +1,16 @@
 <aura:component>
+    <aura:handler name="compEvent" event="c:myComponentEvent" action="{!c.eventHandler}"/>
+    <aura:handler event="c:myApplicationEvent" action="{!c.eventHandler}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="eventMessage" type="string"/>
 
+    <div class="parent">
+        <h2>Parent Component</h2>
+        <c:ChildComponent valueFromParent="Message from parent component."/>
+
+        <aura:if isTrue="{!v.eventMessage}">
+            <h2>Message from event:</h2>
+            <div>{!v.eventMessage}</div>
+        </aura:if>
+    </div>
 </aura:component>	
