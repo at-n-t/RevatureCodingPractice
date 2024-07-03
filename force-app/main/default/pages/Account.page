@@ -1,0 +1,9 @@
+<apex:page controller="SingleAccountVF">
+    <apex:pageBlock title="Account">
+      <apex:pageBlockTable value="{!acc.Name}" var="account">
+        <apex:outputField value ="{!acc.Id}"/>
+        <apex:outputField value="{!acc.industry}"/>
+        <apex:outputField value="{!acc.phone}"/>
+      </apex:pageBlockTable>
+   </apex:pageBlock>
+</apex:page>
